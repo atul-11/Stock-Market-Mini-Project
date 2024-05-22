@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+}
+.heading {
+  text-align: center;
+  padding: 2px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  background-color: #e9eef3;
+  width: 75%;
+  padding: 0px 10px 30px 30px;
+  border-radius: 20px;
+  margin: 0px 30px 10px 20px;
+  box-shadow: 4px 4px 10px rgba(218, 223, 228, 255);
+}
+
+.companyList {
+  display: inline-block;
+  height: 620px;
+  background-color: #e9eef3;
+  box-shadow: 4px 4px 10px rgba(218, 223, 228, 255);
+  width: 20%;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+
+.stockDetails {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.companyList li {
+  list-style: none;
+  padding: 10px 10px 10px 0px;
+}
+
+.companyList ul {
+  padding: 15px;
+}
+
+.stockDetails {
+  font-size: 25px;
+}
+
+.summary {
+  font-size: 15px;
+  word-spacing: 2px;
+  line-height: 20px;
+}
+
+.selectCompany {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectCompany button {
+  padding: 10px 15px 10px 15px;
+  box-shadow: 4px 4px 4px rgba(218, 223, 228, 255);
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+.selectCompany button:hover {
+  background-color: #dee8f3;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.button {
+  padding: 10px 15px 10px 15px;
+  box-shadow: 2px 2px 4px rgba(218, 223, 228, 255);
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+}
+
+.button:hover {
+  padding: 10px 15px 10px 15px;
+  box-shadow: 2px 2px 4px rgba(218, 223, 228, 255);
+  background-color: #dee8f3;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+}
+
+.selectCompany span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+rect {
+  pointer-events: all;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  z-index: 1;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: steelblue;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: none;
+  opacity: 0.75;
+}

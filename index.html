@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleLight.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="heading">
+      <h2>Stock Market Analysis</h2>
+    </section>
+    <section>
+      <main>
+        <div class="chart Quicksand">
+          <!-- <svg id="chart-container"></svg> -->
+          <div id="chart-container"></div>
+          <div class="buttons">
+            <button class="year5 button">5 years</button>
+            <button class="year1 button">1 year</button>
+            <button class="month3 button">3 months</button>
+            <button class="month1 button">1 month</button>
+          </div>
+          <div class="stockDetails">
+            <h4 class="companyName"></h4>
+            <h4 class="profitValue"></h4>
+            <h4 class="bookValue"></h4>
+          </div>
+          <div class="summary"></div>
+        </div>
+        <div class="companyList">
+          <ul></ul>
+        </div>
+      </main>
+    </section>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script1.js"></script>
+    <script src="plot2.js"></script>
+    <script src="selectScale.js"></script>
+  </body>
+</html>
